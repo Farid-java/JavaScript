@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb ON OFF</title>
+
+    <style>
+      .bulb-container {
+        margin: 25px;
+        padding: 50px;
+      }
+      #image {
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bulb Control</h1>
+    <button onclick="turnOn()">Turn on</button>
+    <button onclick="turnOff()">Turn Off</button>
+
+    <button id="onoffButton" onclick="toggleBulb()">ON</button>
+
+    <div class="bulb-container">
+      <img id="image" src="Off_bulb.jpg" alt="" />
+    </div>
+
+    <script>
+      //turn on
+      const turnOn = () => {
+        let imgob = document.getElementById("image");
+        imgob.setAttribute("src", "On_Bulb.jpg");
+      };
+
+      //trun off
+      const turnOff = () => {
+        let imgob = document.getElementById("image");
+        imgob.setAttribute("src", "Off_bulb.jpg");
+      };
+
+
+      //toggle
+      const  toggleBulb=()=>{
+       let imgob=document.getElementById("image");
+      let srcvalue= imgob.getAttribute('src');
+
+          let onButton=document.getElementById('onoffButton');
+            let buttonText= onButton.innerHTML;
+            console.log(buttonText);
+      console.log(srcvalue);
+
+      if(srcvalue=='Off_bulb.jpg')
+      {
+          turnOn();
+          onButton.innerHTML="OFF";
+      }
+      else{
+          turnOff(); 
+          onButton.innerHTML="ON";
+      }
+
+
+      };
+    </script>
+  </body>
+</html>
