@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays in JavaScript</h1>
+
+    <script>
+      //create array in javaScript
+let arr=[12,25,11,8,90];
+console.log(arr);
+console.log(arr[0]);
+
+//create array in Another Way
+let name=new Array("Dfh","dsaf","raddj");
+console.log(name)
+console.log(name[0])
+//add one more name in array
+name.push("Raji")
+console.log(name)
+console.log(name.length)
+
+//type is not fixed
+const mydetails=["Farid","9659658932","Sakinaka",["Gufran","632566"]]
+console.log(mydetails)
+console.log(mydetails[3][0])
+console.log(mydetails[3][1])
+
+//forEach loop for traverse element in array
+name.forEach(function(item,index) {
+    console.log(index,"=>",item)
+ 
+});
+
+//traverse number element
+let sum=0
+arr.forEach(function(it,i){
+   
+console.log(i+" "+it)
+  sum=sum+it
+})
+console.log(sum)
+
+//deleting element from last index of array 
+let r=name.pop();
+console.log(r)
+console.log(name)
+
+
+//deleting element from begining index of array
+   let r1=name.shift();
+   console.log(r1);
+   console.log(name)
+   
+
+   //Add element deleting begining index element
+   let r2=name.unshift("Karan");
+   console.log(r2);
+   console.log(name)
+
+   //find index number of element 
+   let pos=name.indexOf("Karan");
+   console.log(pos)
+
+   //remove the element from any position
+     let remove= name.splice(1,2);//remove element from index number 1 to index number 2.
+     console.log(remove)
+     console.log(name)
+
+     //copy and Array
+     let copy=name.slice();
+     //shallowCopy
+     console.log(name)
+   </script>
+</body>
+</html>

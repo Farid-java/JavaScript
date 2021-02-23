@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop in JavaScript</h1>
+
+    <script>
+        //for loop 
+for(let i=0;i<=10;i++) 
+{
+    console.log(`hey ${i}`);
+}
+
+
+//While Loop
+//example 1
+let i=1;
+while(i<=10)
+{
+console.log(i)
+i++;
+}
+
+//example 2
+let l=1;
+let b=true;
+while(b)
+{
+    console.log(`While ${l}`)
+    l++;
+    if(l==11)
+    {
+        b=false;
+    }
+}
+
+
+//Do While Loop
+let num=1;
+do{
+    console.log(`Do While Loop : ${num}`);
+    num++;
+    
+}
+while(num<=10);
+
+
+//for_in Loop
+
+let st1=
+{
+name:'Farid',
+phone:'6325',
+address:'Sakinaka',
+}
+console.log(st1)
+console.log(typeof st1)
+
+
+for(let k in st1) // we get Key based on that we get element
+                 // object can traverse 
+{
+    console.log(`${k}=>${st1[k]} `)
+}
+
+// use for_in loop for Array
+let ar=["Abc","Xyz","LMN"];
+
+for(var a in ar)
+{
+    console.log(a+" "+ar[a])
+}
+
+
+//for_of loop 
+
+let ar1=["Abc","Xyz","LMN"];
+
+console.log(ar1)
+
+for(let item of ar1)//we get directly element instead of Key
+                     // object cant traverse 
+{
+    console.log(item)
+}
+    </script>
+</body>
+</html>

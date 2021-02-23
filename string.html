@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Function</h1>
+<script>
+//String equale method operator
+//compare contain
+let s1="javascript"
+let s2="javascript"
+console.log(s1==s2)
+if(s1==s2)
+{
+    console.log("both are equal")
+}
+//compare reference
+let s3=new String("javascript")
+let s4=new String("javascript")
+console.log(s3)
+console.log(s4)
+console.log(s3==s4)
+
+
+//Compare to String
+let c1="A";
+let c2="B";
+console.log(c1.localeCompare(c2))
+
+
+//Replace word in String with other word
+let oldString="I hate JavaScript"
+let newString=oldString.replace("hate","love");
+console.log(newString)
+
+
+//Accessing character in String
+console.log(oldString.charAt(0));
+console.log(oldString[0])
+
+//convert String to Array
+
+let array=oldString.split(" ");
+console.log(array)
+
+let array1=oldString.split("");
+console.log(array1)
+</script>
+</body>
+</html> 

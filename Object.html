@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object In JavaScript</h1>
+
+    <script>
+       // creating object
+           let ob={
+           name: "Raju",
+           age: 30,
+           address: 'Sakinaka',
+           phone: 9658,
+           "Last Name":"Marwadi" ,//if u want space between word then key should be in String form
+         display: function(){
+             console.log("display Name..");
+             console.log(this.name);
+             console.log(this.address);
+         }
+     
+        } ;
+ 
+     console.log(ob)
+      console.log(typeof ob)
+
+// Accessing the properties of object
+console.log(ob.name)
+console.log(ob.address)
+// access element incase of key is in String form
+console.log(ob["Last Name"])
+console.log(ob["name"])
+
+//call function store in ob object
+ob.display();
+
+//use for_in loop
+for(let i in ob)
+{
+    console.log(i+"=>"+ob[i])
+}
+
+//changing values of properties
+ob.name="Maju";
+
+//check value of object ob.
+console.log(ob)
+
+
+//dynamic adding properties
+ob["email"]="Hello@gmail.com";
+
+console.log(ob);
+
+
+//delete property 
+delete ob['Last Name'];
+
+console.log(ob)
+    </script>
+</body>
+</html>

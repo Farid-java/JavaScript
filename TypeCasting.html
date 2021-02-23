@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Type Converstion or Type Casting</h1>
+<script>
+    //other value to String conversion
+let a=12;
+console.log(typeof(a));//Number Type
+
+//Number to String
+let as=String(a);
+console.log(typeof(as));//String Type
+console.log(as.length)
+
+//again Number to String
+let s=a.toString();
+console.log(typeof(s))
+
+//Numeric Conversion
+let value="1234";
+console.log(value+5)
+console.log(typeof(value))
+
+let num=Number(value);
+console.log(num+5);
+
+//convert float to Number
+let f1=3265.4536;
+console.log(typeof(f1))
+console.log(f1+1.04)
+
+//again Numeric Conversion
+let print=parseInt(value);
+console.log(print)
+console.log(typeof(print))
+
+// undefined => NaN
+// null => 0
+// true => 1
+// false => 0
+
+
+//Boolean Conversion
+let ex="false";//it return false in Boolean only when no character in String 
+               // otherwise give true everyTime
+console.log(typeof ex);
+
+
+let exb=Boolean(ex);
+console.log(exb)
+console.log(typeof exb)
+
+</script>
+</body>
+</html>

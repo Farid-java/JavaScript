@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>DOM SELECTOR</h1> 
+<h2 id="text">Hello One Who are Reading</h2>
+   <span class="s">Hi, I m Java </span>
+   <h3 class="s">I m JAVA Daveloper</h3>
+   <h1 class="s">Class Selector</h1>
+   
+   
+   <script>
+       console.log("SELECT WHOLE HTML")
+let h=document.documentElement;
+console.log(h);
+
+
+console.log("SELECT WHOLE HEAD")
+let head=document.head;
+
+console.log(head)
+
+console.log("SELECT WHOLE BODY")
+let body=document.body;
+
+console.log(body)
+
+//selector by using id name
+let h2=document.getElementById("text");
+console.log(h2)
+h2.innerHTML="change Text";
+h2.style.color="red";
+h2.style.backgroundColor="blue";
+
+//selector by using class name
+let claass=document.getElementsByClassName("s");
+   
+for(let element of claass)
+{
+    console.log(element);
+    element.style.color="orange";
+     
+}
+
+//selector by tag name
+let tag=document.getElementsByTagName("span")
+for(let tagelement of tag)
+{
+    console.log(tagelement);
+    tagelement.style.backgroundColor="purple"
+}
+
+//query selector- single element
+
+
+let query=document.querySelector(".s");
+query.style.color="blue";
+
+
+//querySelectorAll-list of element
+let all=document.querySelectorAll(".s");
+
+for(let allelement of all)
+{
+    allelement.style.backgroundColor="yellow"
+}
+
+  </script>
+</body>
+</html>

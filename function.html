@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function in JavaScript</h1>
+    <script>
+
+//how to create non parameterized function
+function sayHello()
+{
+   console.log("Hello,")
+console.log("how r u ?")
+
+
+}
+//calling function
+sayHello()
+
+//function with argument and return type
+function doSum(a,b)
+{
+    let c=a+b;
+    return c;
+}
+
+//calling function
+let sum=doSum(10,3);
+console.log("Sum is :"+" "+sum)
+
+
+//Arrow function
+const toCelsius=(fahrenite)=>{
+let result=(5/9)*(fahrenite-32);
+return result;
+};
+
+//calling Arrow Function
+let celcious=toCelsius(102);
+console.log(celcious);
+
+    </script>
+</body>
+</html>
