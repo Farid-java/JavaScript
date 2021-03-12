@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JAVASCRIPT TIMER FUNCTION</h1>
+
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+
+    <script>
+      function mycode() {
+        console.log("Hi,");
+        console.log("My name is Rehan");
+      }
+    let timer;
+      function start() {
+        //call mycode function using predefined setTimeout(function name, time in millisecond) function
+        //setTimeout(function name, time in millisecond) run function after some time which is mentioned in setTimeout(function name, time in millisecond) as
+     
+        setTimeout(mycode, 5000);
+
+        //same as Timeinteravl(function name, time in millisecond) which run code every interval of time.
+       timer= setInterval(mycode, 2000);
+      }
+     // for stop Timer or interval function
+     function stop(){
+         clearInterval(timer);
+         
+     }
+
+    </script>
+  </body>
+</html>
